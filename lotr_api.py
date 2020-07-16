@@ -70,9 +70,6 @@ pov_total = pov_df['name'].count()
 print('{} characters alive on pov population from a total of {}.\n\n'.format(alive,pov_total))
 
 # Spouse count on total population
-#print(df[df['spouse']=='']['_id'].index)
-#print(df[df['spouse'].isna()]['_id'].index)
-
 #Check for duplicates
 # for element in df[df['spouse'].isna()]['_id'].index:
 #     if element in df[df['spouse']=='']['_id'].index:
@@ -84,14 +81,3 @@ print('{} characters married on total population from a total of {}.\n\n'.format
 # Spouse count on pov population
 pov_married = pov_df[pov_df['spouse']=='']['_id'].count() + pov_df[pov_df['spouse'].isna()]['_id'].count()
 print('{} characters married on total population from a total of {}.\n\n'.format(pov_married,pov_total))
-
-
-# print('-----')
-# print(pov_df[pov_df['spouse'].isna()]['_id'].count())
-# print(('-----'))
-# print(pov_df[pov_df['spouse']=='']['_id'].count())
-# #print(pov_df['spouse'])
-# print('-----')
-# print(df[df['spouse'].isna()]['spouse'])
-# print('-----')
-# print(pov_df[['name','spouse']])
